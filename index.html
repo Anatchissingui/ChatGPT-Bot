@@ -6,20 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>GIME</title>
     <link rel="shortcut icon" href="./favicon-epf.png" type="favicon">
 </head>
 
 <body>
+    
+    <div class="container">
+        <div class="header">
+            <h3>GIME EPF RECUPERAÇÕES</h3>
+        </div>
+
 
 <!--Balão de bate papo no canto inferior do site-->
-<iframe
-src="https://www.chatbase.co/chatbot-iframe/tb1SvJPIhN9qA3fpX9kr7"
-width="100%"
-height="700"
-frameborder="0"
-></iframe>
 
+<script>
+    window.chatbaseConfig = {
+    chatbotId: "tb1SvJPIhN9qA3fpX9kr7",
+    }
+</script>
+<script
+    src="https://www.chatbase.co/embed.min.js"
+    defer>
+</script>
+<style>#chatbase-embed-container {
+    bottom: 100px;
+}
+</style>
+        <div class="info"></div>
+
+        <div class="chat-container">
+            <div id="chat-log"></div>
+        </div>
+
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Send a message.">
+            <button id="send-button">
+                <i class="fa-solid fa-paper-plane" id="button-icon"></i>
+            </button>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
 
