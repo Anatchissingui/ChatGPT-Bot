@@ -52,7 +52,7 @@ body{
     color: #4caf50;
 }
 
-.input-container{
+/* .input-container{
     background-color: #343541;
     padding: 10px;
     display: flex;
@@ -60,7 +60,7 @@ body{
     border-top: 1px solid #5c5c66;
     position: sticky;
     bottom: 0;
-}
+} */
 
 #user-input{
     background-color: #40414f;
